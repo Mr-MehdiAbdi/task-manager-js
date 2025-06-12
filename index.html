@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TodoList</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="add-task">
+        <input type="text" id="taskInput" placeholder="Enter task ..." />
+        <select id="priorityInput">
+            <option value="Low"> Low </option>
+            <option value="Normal">Normal</option>
+            <option value="Hight">Hight</option>
+            </option>
+        </select>
+           <button id="addBtn">Add</button>
+      </div>
+      <div class="filter">
+        <input type="text" id="searchInput" placeholder="search Task ..."/>
+       <select id="priorityFilter">
+        <option value="All">All</option>
+        <option value="Low">Low</option>
+        <option value="Normal">Normal</option>
+        <option value="High">High</option>
+       </select>
+       <select id="sortFilter">
+          <option value="latest">Latest</option>
+          <option value="earliest">Earliest</option>
+        </select>
+      </div>
+       <ul id="taskList"></ul>
+    </div>
+    <script src="/app.js"></script>
+  </body>
+</html>
